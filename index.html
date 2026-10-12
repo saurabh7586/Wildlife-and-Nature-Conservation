@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WildGuard | Wildlife & Nature Conservation</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo"><i class="fa-solid fa-leaf"></i> WildGuard</a>
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#species">Endangered Species</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#get-involved" class="btn-nav">Take Action</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobileMenu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Protecting Wildlife, Preserving Nature</h1>
+            <p>Join our mission to safeguard endangered species and restore natural habitats across the globe before it's too late.</p>
+            <div class="hero-btns">
+                <a href="#species" class="btn primary-btn">Explore Species</a>
+                <a href="#get-involved" class="btn secondary-btn">Join the Cause</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about container">
+        <div class="section-title">
+            <h2>Why Conservation Matters</h2>
+            <p>Our planet's biodiversity is facing unprecedented threats. Every species plays a vital role in maintaining ecological balance.</p>
+        </div>
+        <div class="about-grid">
+            <div class="about-card">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Habitat Protection</h3>
+                <p>Securing natural landscapes and forests to provide safe havens for wildlife populations.</p>
+            </div>
+            <div class="about-card">
+                <i class="fa-solid fa-shield-cat"></i>
+                <h3>Anti-Poaching</h3>
+                <p>Deploying community-led initiatives and patrols to protect vulnerable animals from illegal trade.</p>
+            </div>
+            <div class="about-card">
+                <i class="fa-solid fa-seedling"></i>
+                <h3>Reforestation</h3>
+                <p>Planting native trees and restoring degraded ecosystems to support natural biodiversity.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Endangered Species Section with Filter -->
+    <section id="species" class="species-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Endangered Species Focus</h2>
+                <p>Learn about the remarkable creatures fighting for survival today.</p>
+            </div>
+            
+            <div class="filter-btns">
+                <button class="filter-btn active" data-filter="all">All Species</button>
+                <button class="filter-btn" data-filter="mammal">Mammals</button>
+                <button class="filter-btn" data-filter="bird">Birds</button>
+                <button class="filter-btn" data-filter="reptile">Reptiles</button>
+            </div>
+
+            <div class="species-grid">
+                <!-- Species 1 -->
+                <div class="species-card" data-category="mammal">
+                    <img src="https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=600&q=80" alt="Tiger">
+                    <div class="species-info">
+                        <span class="status critical">Critically Endangered</span>
+                        <h3>Bengal Tiger</h3>
+                        <p>Habitat loss and poaching have severely reduced wild populations across South Asia.</p>
+                    </div>
+                </div>
+                <!-- Species 2 -->
+                <div class="species-card" data-category="mammal">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTXnohqFgu24SmEtHrg_jquD_wy0oiMtAco83MS60xhQ&s="Elephant">
+                    <div class="species-info">
+                        <span class="status endangered">Endangered</span>
+                        <h3>African Elephant</h3>
+                        <p>Targeted for ivory tusks and impacted by human-wildlife conflict over dwindling land.</p>
+                    </div>
+                </div>
+                <!-- Species 3 -->
+                <div class="species-card" data-category="bird">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIprtQYpwHOjvLbFbmUagTguK7V2OOu9hSHpsFwnLz-MG6MzEKKz0Xw0g3&s=10="Macaw">
+                    <div class="species-info">
+                        <span class="status vulnerable">Vulnerable</span>
+                        <h3>Scarlet Macaw</h3>
+                        <p>Threatened by the pet trade and rapid deforestation in tropical rainforests.</p>
+                    </div>
+                </div>
+                <!-- Species 4 -->
+                <div class="species-card" data-category="reptile">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5369465be4b0507a1fd05af0/1504570814751-229TMWFNRGF2PSCVZQ4J/hawksbill+turtle" alt="Sea Turtle">
+                    <div class="species-info">
+                        <span class="status critical">Critically Endangered</span>
+                        <h3>Hawksbill Sea Turtle</h3>
+                        <p>Facing dangers from ocean plastic pollution, coastal development, and shell harvesting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects container">
+        <div class="section-title">
+            <h2>Active Conservation Projects</h2>
+            <p>See how our field operations are making a real-world impact right now.</p>
+        </div>
+        <div class="project-slider">
+            <div class="project-box">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfbSjMfAHVtxCByMcfljxdcFMykmsvXU0NtYPX9rg-0Fl2Sxr1evpier0G&s=10" alt="Forest Restoration">
+                <div class="project-content">
+                    <h3>Amazon Canopy Initiative</h3>
+                    <p>Restoring 5,000 hectares of deforested land with native canopy trees to link fragmented habitats.</p>
+                    <span class="progress-text">Goal: 85% Completed</span>
+                </div>
+            </div>
+            <div class="project-box">
+                <img src="https://www.livelaw.in/cms/wp-content/uploads/2017/08/Animals-1.jpg" alt="Wildlife Corridor">
+                <div class="project-content">
+                    <h3>Safe Passage Corridors</h3>
+                    <p>Building protected green bridges and corridors allowing elephants and big cats to migrate safely.</p>
+                    <span class="progress-text">Goal: 60% Completed</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Pledge / Get Involved Section -->
+    <section id="get-involved" class="cta-section">
+        <div class="container cta-container">
+            <h2>Take the Wildlife Protection Pledge</h2>
+            <p>Add your voice to thousands of conservationists worldwide. Commit to sustainable living and wildlife advocacy.</p>
+            
+            <form id="pledgeForm" class="pledge-form">
+                <input type="text" id="pledgeName" name="pledgeName" placeholder="Enter your full name" required>
+                <input type="email" id="pledgeEmail" name="pledgeEmail" placeholder="Enter your email address" required>
+                <button type="submit" class="btn primary-btn">Sign the Pledge</button>
+            </form>
+            <!-- <div id="successMessage" class="hidden-msg">Thank you for pledging to protect nature! 🌍</div>
+        </div> -->
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 WildGuard Conservation Foundation. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <h3 id="result"></h3>
+
+     <script>
+    const form = document.getElementById("pledgeForm");
+    form.addEventListener("submit" , function(event) {
+
+        event.preventDefault();
+
+        let pledgeName = document.getElementById("pledgeName").value;
+        let pledgeEmail = document.getElementById("pledgeEmail").value;
+    
+    
+        var message = "Pledge Successful";
+
+        document.getElementById("result").innerHTML = 
+        
+        message + "<br>" +
+         "Name: " + pledgeName + "<br>" +
+        // "Age: " + pledgeEmail; + "<br>" + 
+        "Email: " + pledgeEmail ;
+        
+    })
+
+ </script>
+
+</body>
+</html>
